@@ -2,12 +2,18 @@
 	"id": "89f13079-b021-476d-a965-86870dae27da",
 	"createdAt": "2024-01-29T09:47:51.671Z",
 	"createdBy": "danielsaua.olsen@dfo.no",
-	"globalScripts": [],
+	"globalScripts": [
+		{
+			"id": "443c46a9-d118-4e9a-811b-93504de32e31",
+			"name": "DlfServerScripts - db",
+			"contextname": "db"
+		}
+	],
 	"externalModules": [],
 	"entitySets": [],
 	"apis": [],
 	"name": "apiSetNegotiationActive",
-	"ver": "24.1.29.957",
+	"ver": "24.1.29.1112",
 	"description": null,
 	"content": "file:///content.ts",
 	"useAsGlobalScript": false,

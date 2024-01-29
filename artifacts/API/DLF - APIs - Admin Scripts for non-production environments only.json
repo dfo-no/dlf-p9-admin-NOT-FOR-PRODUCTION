@@ -26,7 +26,7 @@
 			"description": "",
 			"parameters": [
 				{
-					"name": "settlement",
+					"name": "settlementId",
 					"description": "",
 					"required": true,
 					"inPath": true,
@@ -52,7 +52,7 @@
 			"description": "",
 			"parameters": [
 				{
-					"name": "negotiationId",
+					"name": "settlementId",
 					"description": "",
 					"required": true,
 					"inPath": false,
@@ -74,7 +74,7 @@
 	"documentation": [],
 	"name": "DLF - APIs - Admin Scripts for non-production environments only",
 	"endpoint": "/api/serverscript/dlf-apis-adminscriptsfornon-productionenvironmentsonly",
-	"ver": "24.1.29.955",
+	"ver": "24.1.29.1110",
 	"version": null,
 	"description": "Contains scripts that in best case scenario only breaks the solution, and in worst case deletes everything",
 	"mediaType": null,

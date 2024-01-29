@@ -13,7 +13,7 @@
 	"entitySets": [],
 	"apis": [],
 	"name": "apiDeleteSettlement",
-	"ver": "23.11.28.830",
+	"ver": "24.1.29.1113",
 	"description": null,
 	"content": "file:///content.ts",
 	"useAsGlobalScript": false,

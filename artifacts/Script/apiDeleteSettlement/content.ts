@@ -1,26 +1,26 @@
 
 
-if (!req.query.settlement) throw Error("Parameter settlement is missing. You need to specify a settlement for deletion. ie. add ?settlement=123 to the URL");
-if (req.query.settlement?.length < 1) throw Error("Invalid settlement");
+if (!req.query.settlementId) throw Error("Parameter settlementId is missing. You need to specify a settlement for deletion. ie. add ?settlementId=123 to the URL");
+if (req.query.settlementId?.length < 1) throw Error("Invalid settlement");
 
-let dbResScenario = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.scenario where sim_id in (select sim_id from dlf.simulation where neg_id = (select neg_id from dlf.negotiation where settl_id = $1)) RETURNING *`, [req.query.settlement ], true);
-let dbResSim = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.simulation where neg_id = (select neg_id from dlf.negotiation where settl_id = $1) RETURNING *`, [req.query.settlement ], true);
-let dbResNegRes = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.negotiation_result where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResNegResFuture = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.negotiation_result_future where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResNegResProtocol = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.negotiation_result_protocol where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResNegResProtocolEmpl = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.negotiation_result_protocol_employee where settl_id =$1 RETURNING *`, [req.query.settlement ], true);
-let dbResProtocol = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.protocol where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResProtocolLatest = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.protocol_latest_offer where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResProtocolMem = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.protocol_membership where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResProtocolMemPres = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.protocol_membership_presence where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResProtocolRemark = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.protocol_remark where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResSalLetterSetup = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_setup where sl_setup_id in (select sl_setup_id from dlf.salary_letter_package where settl_id = $1) RETURNING *`, [req.query.settlement ], true);
-let dbResSalLetterTemplates = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_setup_template where sl_setup_id in (select sl_setup_id from dlf.salary_letter_package where settl_id = $1) RETURNING *`, [req.query.settlement ], true);
-let dbResSalLetter = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_package where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResSalLetterRec = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_package_receiver where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResSalLetterSign = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_package_signature where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResNegotiation = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.negotiation where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
-let dbResSettlement = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.settlement where settl_id = $1 RETURNING *`, [req.query.settlement ], true);
+let dbResScenario = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.scenario where sim_id in (select sim_id from dlf.simulation where neg_id = (select neg_id from dlf.negotiation where settl_id = $1)) RETURNING *`, [req.query.settlementIdId ], true);
+let dbResSim = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.simulation where neg_id = (select neg_id from dlf.negotiation where settl_id = $1) RETURNING *`, [req.query.settlementId ], true);
+let dbResNegRes = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.negotiation_result where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResNegResFuture = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.negotiation_result_future where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResNegResProtocol = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.negotiation_result_protocol where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResNegResProtocolEmpl = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.negotiation_result_protocol_employee where settl_id =$1 RETURNING *`, [req.query.settlementId ], true);
+let dbResProtocol = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.protocol where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResProtocolLatest = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.protocol_latest_offer where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResProtocolMem = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.protocol_membership where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResProtocolMemPres = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.protocol_membership_presence where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResProtocolRemark = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.protocol_remark where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResSalLetterSetup = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_setup where sl_setup_id in (select sl_setup_id from dlf.salary_letter_package where settl_id = $1) RETURNING *`, [req.query.settlementId ], true);
+let dbResSalLetterTemplates = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_setup_template where sl_setup_id in (select sl_setup_id from dlf.salary_letter_package where settl_id = $1) RETURNING *`, [req.query.settlementId ], true);
+let dbResSalLetter = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_package where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResSalLetterRec = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_package_receiver where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResSalLetterSign = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_package_signature where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResNegotiation = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.negotiation where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResSettlement = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.settlement where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
 
 
 result.data = {
@@ -47,7 +47,7 @@ result.data = {
         "Deleted Salary letter templates": dbResSalLetterTemplates.length,
         
     }],
-    msg: `Settlement with ID: ${req.query.settlement} and related data is deleted and gone for ever (unless Arne magically brings it back with a backup)`,
+    msg: `Settlement with ID: ${req.query.settlementId} and related data is deleted and gone for ever (unless Arne magically brings it back with a backup)`,
     err: false,
 }
 complete();
