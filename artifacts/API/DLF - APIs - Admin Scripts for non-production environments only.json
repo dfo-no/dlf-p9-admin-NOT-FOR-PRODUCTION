@@ -1,0 +1,98 @@
+{
+	"id": "0c0e2b1a-da5a-487e-8884-9eac51f9f5a1",
+	"createdAt": "2023-11-27T17:56:42.564Z",
+	"createdBy": "danielsaua.olsen@dfo.no",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "3029c01a-b8ba-42e8-ce90-fe98b09c6b5b",
+			"method": "GET",
+			"path": "/wipe-salary-letters-and-reset-protocol-and-negotiation",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "b3759d3b-b293-4ae4-b530-59c7f145433c",
+			"enableTrace": true
+		},
+		{
+			"id": "ca147102-8e78-4f10-fab1-f3fb9e67cb54",
+			"method": "GET",
+			"path": "/delete-settlement",
+			"description": "",
+			"parameters": [
+				{
+					"name": "settlement",
+					"description": "",
+					"required": true,
+					"inPath": true,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "5e8611f5-4e68-4936-b596-81706a191ca3",
+			"enableTrace": true,
+			"enableCredentials": false,
+			"captureBody": false
+		},
+		{
+			"id": "d346312f-82f7-439d-ff3a-88af2eec0cf9",
+			"method": "GET",
+			"path": "/set-negotiation-active",
+			"description": "",
+			"parameters": [
+				{
+					"name": "negotiationId",
+					"description": "",
+					"required": true,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "89f13079-b021-476d-a965-86870dae27da",
+			"enableTrace": true
+		}
+	],
+	"definitions": [],
+	"documentation": [],
+	"name": "DLF - APIs - Admin Scripts for non-production environments only",
+	"endpoint": "/api/serverscript/dlf-apis-adminscriptsfornon-productionenvironmentsonly",
+	"ver": "24.1.29.955",
+	"version": null,
+	"description": "Contains scripts that in best case scenario only breaks the solution, and in worst case deletes everything",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": true,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "db5be72c-c4f9-42c7-8ce1-c428fcbf195a",
+	"apiGroup": "cdd725fb-7c59-4c6a-9345-ef5c57b371ef",
+	"apiFormat": 0,
+	"roles": []
+}

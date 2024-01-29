@@ -1,0 +1,20 @@
+{
+	"id": "89f13079-b021-476d-a965-86870dae27da",
+	"createdAt": "2024-01-29T09:47:51.671Z",
+	"createdBy": "danielsaua.olsen@dfo.no",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "apiSetNegotiationActive",
+	"ver": "24.1.29.957",
+	"description": null,
+	"content": "file:///content.ts",
+	"useAsGlobalScript": false,
+	"transpiledContent": "file:///transpiledContent.ts",
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "typescript",
+	"jsscriptGroup": "060b8ffe-bb72-4f93-bfef-170921de8595",
+	"package": "db5be72c-c4f9-42c7-8ce1-c428fcbf195a"
+}

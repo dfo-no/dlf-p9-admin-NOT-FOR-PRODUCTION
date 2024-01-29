@@ -1,0 +1,70 @@
+{
+	"id": "db5be72c-c4f9-42c7-8ce1-c428fcbf195a",
+	"createdAt": "2023-11-27T17:39:52.591Z",
+	"createdBy": "danielsaua.olsen@dfo.no",
+	"git": {
+		"remote": "https://github.com/dfo-no/dlf-p9-admin-NOT-FOR-PRODUCTION.git"
+	},
+	"name": "dlf-p9-admin-NOT-FOR-PRODUCTION",
+	"description": "NEVER deploy this to production. Helper API script for testing. Contains functionality to manipulate and delete entire apps",
+	"ver": "24.1.29.1023",
+	"enableCICD": true,
+	"apps": [],
+	"api": [
+		{
+			"id": "0c0e2b1a-da5a-487e-8884-9eac51f9f5a1",
+			"name": "DLF - APIs - Admin Scripts for non-production environments only",
+			"description": "Contains scripts that in best case scenario only breaks the solution, and in worst case deletes everything",
+			"apiGroup": "cdd725fb-7c59-4c6a-9345-ef5c57b371ef"
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [
+		{
+			"id": "b3759d3b-b293-4ae4-b530-59c7f145433c",
+			"name": "apiWipeSalaryLettersAndResetProtocolAndNegotiation",
+			"description": null
+		},
+		{
+			"id": "89f13079-b021-476d-a965-86870dae27da",
+			"name": "apiSetNegotiationActive",
+			"description": null
+		},
+		{
+			"id": "5e8611f5-4e68-4936-b596-81706a191ca3",
+			"name": "apiDeleteSettlement",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "060b8ffe-bb72-4f93-bfef-170921de8595",
+			"name": "DlfAdminScriptsNotForProduction",
+			"description": null
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}

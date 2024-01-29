@@ -1,0 +1,26 @@
+{
+	"id": "b3759d3b-b293-4ae4-b530-59c7f145433c",
+	"createdAt": "2023-11-27T17:42:11.663Z",
+	"createdBy": "danielsaua.olsen@dfo.no",
+	"globalScripts": [
+		{
+			"id": "443c46a9-d118-4e9a-811b-93504de32e31",
+			"name": "DlfServerScripts - db",
+			"contextname": "db"
+		}
+	],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "apiWipeSalaryLettersAndResetProtocolAndNegotiation",
+	"ver": "23.11.27.187",
+	"description": null,
+	"content": "file:///content.ts",
+	"useAsGlobalScript": false,
+	"transpiledContent": "file:///transpiledContent.ts",
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "typescript",
+	"jsscriptGroup": "060b8ffe-bb72-4f93-bfef-170921de8595",
+	"package": "db5be72c-c4f9-42c7-8ce1-c428fcbf195a"
+}

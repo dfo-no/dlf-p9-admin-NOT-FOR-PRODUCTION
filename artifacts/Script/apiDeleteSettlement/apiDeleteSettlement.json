@@ -1,0 +1,26 @@
+{
+	"id": "5e8611f5-4e68-4936-b596-81706a191ca3",
+	"createdAt": "2023-11-27T18:11:55.872Z",
+	"createdBy": "danielsaua.olsen@dfo.no",
+	"globalScripts": [
+		{
+			"id": "443c46a9-d118-4e9a-811b-93504de32e31",
+			"name": "DlfServerScripts - db",
+			"contextname": "db"
+		}
+	],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "apiDeleteSettlement",
+	"ver": "23.11.28.830",
+	"description": null,
+	"content": "file:///content.ts",
+	"useAsGlobalScript": false,
+	"transpiledContent": "file:///transpiledContent.ts",
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "typescript",
+	"jsscriptGroup": "060b8ffe-bb72-4f93-bfef-170921de8595",
+	"package": "db5be72c-c4f9-42c7-8ce1-c428fcbf195a"
+}
