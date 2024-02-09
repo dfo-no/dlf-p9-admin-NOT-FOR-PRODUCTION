@@ -68,13 +68,37 @@
 			"endpoints": [],
 			"serverScript": "89f13079-b021-476d-a965-86870dae27da",
 			"enableTrace": true
+		},
+		{
+			"id": "68aaec59-330d-42c6-a8f0-50f83044f52b",
+			"method": "GET",
+			"path": "/delete-protocol",
+			"description": "",
+			"parameters": [
+				{
+					"name": "settlementId",
+					"description": "",
+					"required": true,
+					"inPath": true,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "8395bbb0-b3f0-4f0d-8b13-d8d84046ba70",
+			"enableTrace": true
 		}
 	],
 	"definitions": [],
 	"documentation": [],
 	"name": "DLF - APIs - Admin Scripts for non-production environments only",
 	"endpoint": "/api/serverscript/dlf-apis-adminscriptsfornon-productionenvironmentsonly",
-	"ver": "24.1.29.1110",
+	"ver": "24.02.09.1008",
 	"version": null,
 	"description": "Contains scripts that in best case scenario only breaks the solution, and in worst case deletes everything",
 	"mediaType": null,
@@ -84,6 +108,7 @@
 	"apiType": "script",
 	"about": null,
 	"enableProxy": false,
+	"forwardProxy": null,
 	"restrictAccess": false,
 	"enableTrace": true,
 	"enableIDE": false,

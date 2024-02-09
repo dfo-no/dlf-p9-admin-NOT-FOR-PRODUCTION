@@ -1,6 +1,6 @@
 {
-	"id": "b3759d3b-b293-4ae4-b530-59c7f145433c",
-	"createdAt": "2023-11-27T17:42:11.663Z",
+	"id": "8395bbb0-b3f0-4f0d-8b13-d8d84046ba70",
+	"createdAt": "2024-02-09T10:06:44.582Z",
 	"createdBy": "danielsaua.olsen@dfo.no",
 	"globalScripts": [
 		{
@@ -12,10 +12,10 @@
 	"externalModules": [],
 	"entitySets": [],
 	"apis": [],
-	"name": "apiWipeSalaryLettersAndResetProtocolAndNegotiation",
-	"ver": "23.11.27.187",
+	"name": "apiDeleteProtocol",
+	"ver": "24.02.09.1008",
 	"description": null,
-	"folder": null,
+	"folder": "",
 	"content": "file:///content.ts",
 	"useAsGlobalScript": false,
 	"transpiledContent": "file:///transpiledContent.ts",

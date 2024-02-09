@@ -33,6 +33,11 @@
 			"description": null
 		},
 		{
+			"id": "8395bbb0-b3f0-4f0d-8b13-d8d84046ba70",
+			"name": "apiDeleteProtocol",
+			"description": null
+		},
+		{
 			"id": "5e8611f5-4e68-4936-b596-81706a191ca3",
 			"name": "apiDeleteSettlement",
 			"description": null

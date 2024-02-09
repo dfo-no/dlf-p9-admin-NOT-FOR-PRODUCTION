@@ -15,6 +15,7 @@
 	"name": "apiDeleteSettlement",
 	"ver": "24.1.29.1113",
 	"description": null,
+	"folder": null,
 	"content": "file:///content.ts",
 	"useAsGlobalScript": false,
 	"transpiledContent": "file:///transpiledContent.ts",
