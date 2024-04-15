@@ -7,9 +7,19 @@
 	},
 	"name": "dlf-p9-admin-NOT-FOR-PRODUCTION",
 	"description": "NEVER deploy this to production. Helper API script for testing. Contains functionality to manipulate and delete entire apps",
-	"ver": "24.1.29.1023",
+	"ver": "24.04.15.0753",
 	"enableCICD": true,
-	"apps": [],
+	"apps": [
+		{
+			"id": "12e41c0a-132f-4716-aaca-ebdb1aaf25ab",
+			"application": "dlf_admin_deleteallthethings",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "db5be72c-c4f9-42c7-8ce1-c428fcbf195a"
+			}
+		}
+	],
 	"api": [
 		{
 			"id": "0c0e2b1a-da5a-487e-8884-9eac51f9f5a1",

@@ -4,7 +4,7 @@ if (!req.query.settlementId) throw Error("Parameter settlementId is missing. You
 if (req.query.settlementId?.length < 1) throw Error("Invalid negotiation");
 
 let dbRes = await new globals.db.DbConnection().connectAndQuery(`
-    UPDATE dlf.negotiation set status = 'Active' WHERE settl_id = $1 RETURNING *
+    UPDATE dlf.negotiation set status = 'Draft' WHERE settl_id = $1 RETURNING *
     `, 
     [req.query.settlementId ], true
 );

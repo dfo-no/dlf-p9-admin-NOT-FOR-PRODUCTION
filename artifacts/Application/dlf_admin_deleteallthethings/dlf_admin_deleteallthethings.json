@@ -1,0 +1,198 @@
+{
+	"id": "12e41c0a-132f-4716-aaca-ebdb1aaf25ab",
+	"createdAt": "2024-04-04T09:15:28.431Z",
+	"createdBy": "danielsaua.olsen@dfo.no",
+	"objects": [
+		{
+			"fieldNo": "bce8093f-bf06-42ac-fe34-85d698ed272c",
+			"fieldName": "Shell",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Shell",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": []
+		},
+		{
+			"fieldNo": "cba020aa-6f2b-47d3-821c-15b711a94264",
+			"fieldName": "App",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "94ed4f04-f60a-4581-b980-069c1c66a72a",
+					"fieldName": "DynamicPage",
+					"fieldParent": "cba020aa-6f2b-47d3-821c-15b711a94264",
+					"fieldType": "sap.f.DynamicPage",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "d815e8af-45d4-4a34-afa7-2497346ce696",
+							"fieldName": "dropdownSettlementlist",
+							"fieldParent": "94ed4f04-f60a-4581-b980-069c1c66a72a",
+							"fieldType": "input_dropdown",
+							"script": "",
+							"customComponent": true,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "lowcode",
+									"value": "Settlement",
+									"script": "",
+									"fieldId": "f0954816-c269-420b-e211-580735eecedd",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "87c353d0-9eef-425f-ea91-32201a2e2f58",
+									"fieldName": "oSelectList",
+									"fieldParent": "d815e8af-45d4-4a34-afa7-2497346ce696",
+									"fieldType": "neptune.CustomComponentContent",
+									"script": "",
+									"customComponent": false,
+									"interfaceId": "83f4037e-f83d-47e9-abf1-8a8086746cbb",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "0a1b7dcd-c3db-4d59-e25d-80f89e79d433",
+					"fieldName": "Init",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "console.log(\"dso test\");",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "32a548ff-e8dc-483c-e260-491ad04c1fe5",
+					"fieldName": "EventTrigger",
+					"fieldParent": 99999,
+					"fieldType": "neptune.events.Trigger",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "49ea6543-aea8-4b71-bad8-dc3673ae2401",
+					"fieldName": "EventListener",
+					"fieldParent": 99999,
+					"fieldType": "neptune.events.Listener",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "7efe953b-94dd-4aa4-dd88-be295418dd76",
+					"fieldName": "GetSettlementList",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "bbef79d9-8f25-41e3-9226-b42f60e42fc0",
+					"restOperation": "d66bf1fb-6942-433c-ac35-533f9ea7cfec",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "console.log(\"fetch settlements\");",
+							"script": "console.log(\"fetch settlements\");",
+							"language": "typescript",
+							"translation": []
+						}
+					],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "24.04.04.0941",
+	"application": "dlf_admin_deleteallthethings",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": true,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"apis": [
+		{
+			"id": "bbef79d9-8f25-41e3-9226-b42f60e42fc0",
+			"name": "DLF - APIs - Server Script",
+			"ver": "24.03.21.0857"
+		}
+	],
+	"package": "db5be72c-c4f9-42c7-8ce1-c428fcbf195a"
+}

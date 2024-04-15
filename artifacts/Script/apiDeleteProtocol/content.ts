@@ -17,6 +17,7 @@ let dbResSalLetterTemplates = await new globals.db.DbConnection().connectAndQuer
 let dbResSalLetter = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_package where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
 let dbResSalLetterRec = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_package_receiver where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
 let dbResSalLetterSign = await new globals.db.DbConnection().connectAndQuery(`delete from dlf.salary_letter_package_signature where settl_id = $1 RETURNING *`, [req.query.settlementId ], true);
+let dbResNegStatusUpdate = await new globals.db.DbConnection().connectAndQuery(`update dlf.negotiation set status = 'Published' where settl_id = $1 RETURNING *`, [req.query.settlementId], true);
 
 result.data = {
     res: [{
@@ -34,7 +35,7 @@ result.data = {
         "Deleted Salary letter signatures": dbResSalLetterSign.length,
         "Deleted Salary letter setups": dbResSalLetterSetup.length,
         "Deleted Salary letter templates": dbResSalLetterTemplates.length,
-        
+        "Updated negotiation status": dbResNegStatusUpdate,
     }],
     msg: `Protocol related to settlement with ID: ${req.query.settlementId}, negotiation results and salary letters is deleted and gone for ever (unless Arne magically brings it back with a backup)`,
     err: false,

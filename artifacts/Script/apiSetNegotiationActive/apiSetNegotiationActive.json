@@ -13,7 +13,7 @@
 	"entitySets": [],
 	"apis": [],
 	"name": "apiSetNegotiationActive",
-	"ver": "24.1.29.1112",
+	"ver": "24.04.15.0717",
 	"description": null,
 	"folder": null,
 	"content": "file:///content.ts",
