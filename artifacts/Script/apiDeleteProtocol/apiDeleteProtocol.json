@@ -13,7 +13,7 @@
 	"entitySets": [],
 	"apis": [],
 	"name": "apiDeleteProtocol",
-	"ver": "24.04.15.0737",
+	"ver": "24.04.18.0949",
 	"description": null,
 	"folder": "",
 	"content": "file:///content.ts",
