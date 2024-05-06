@@ -1,0 +1,27 @@
+{
+	"id": "80f0185e-d70f-4f36-b679-e2ab036303d6",
+	"createdAt": "2024-05-03T12:14:03.306Z",
+	"createdBy": "tarjei.graesdal@dfo.no",
+	"globalScripts": [
+		{
+			"id": "443c46a9-d118-4e9a-811b-93504de32e31",
+			"name": "DlfServerScripts - db",
+			"contextname": "db"
+		}
+	],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "apiTriggerSapImport",
+	"ver": "24.05.06.0652",
+	"description": "manually trigger a sap-import for a settlement",
+	"folder": "",
+	"content": "file:///content.ts",
+	"useAsGlobalScript": false,
+	"transpiledContent": "file:///transpiledContent.ts",
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "typescript",
+	"jsscriptGroup": "060b8ffe-bb72-4f93-bfef-170921de8595",
+	"package": "db5be72c-c4f9-42c7-8ce1-c428fcbf195a"
+}

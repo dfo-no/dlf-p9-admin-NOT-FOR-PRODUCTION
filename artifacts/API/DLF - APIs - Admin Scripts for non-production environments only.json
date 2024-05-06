@@ -92,13 +92,26 @@
 			"endpoints": [],
 			"serverScript": "8395bbb0-b3f0-4f0d-8b13-d8d84046ba70",
 			"enableTrace": true
+		},
+		{
+			"id": "f3ea321b-864c-48ed-ab4a-f1999b802203",
+			"method": "GET",
+			"path": "/trigger-sap-import",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "80f0185e-d70f-4f36-b679-e2ab036303d6"
 		}
 	],
 	"definitions": [],
 	"documentation": [],
 	"name": "DLF - APIs - Admin Scripts for non-production environments only",
 	"endpoint": "/api/serverscript/dlf-apis-adminscriptsfornon-productionenvironmentsonly",
-	"ver": "24.02.09.1008",
+	"ver": "24.05.03.1223",
 	"version": null,
 	"description": "Contains scripts that in best case scenario only breaks the solution, and in worst case deletes everything",
 	"mediaType": null,

@@ -7,7 +7,7 @@
 	},
 	"name": "dlf-p9-admin-NOT-FOR-PRODUCTION",
 	"description": "NEVER deploy this to production. Helper API script for testing. Contains functionality to manipulate and delete entire apps",
-	"ver": "24.04.15.0753",
+	"ver": "24.05.06.0655",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -46,6 +46,11 @@
 			"id": "8395bbb0-b3f0-4f0d-8b13-d8d84046ba70",
 			"name": "apiDeleteProtocol",
 			"description": null
+		},
+		{
+			"id": "80f0185e-d70f-4f36-b679-e2ab036303d6",
+			"name": "apiTriggerSapImport",
+			"description": "manually trigger a sap-import for a settlement"
 		},
 		{
 			"id": "5e8611f5-4e68-4936-b596-81706a191ca3",
